@@ -66,11 +66,32 @@
 
     <div class="after" id="after">
         <div id="chat"></div>
+
+        <form id="imageForm" enctype="multipart/form-data">
+            <input type="file" id="imageInput" accept="image/*" required />
+            <button type="submit">Upload Image</button>
+        </form>
+
+        <form id="videoForm" enctype="multipart/form-data">
+            <input type="file" id="videoInput" accept="video/*" required />
+            <button type="submit">Upload Video</button>
+        </form>
+
+        <form id="fileForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" required />
+            <button type="submit">Upload File</button>
+        </form>
+        
+        
+
         <form id="form">
             <input id="message" type="text" placeholder="Type your message..." autocomplete="off" required />
             <button id="send" type="submit">Send</button>
         </form>
+
     </div>
+
+     
 
     <script src="script.js"></script>
 </body>
